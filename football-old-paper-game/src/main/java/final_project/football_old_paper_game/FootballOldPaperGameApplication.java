@@ -8,6 +8,9 @@ public class FootballOldPaperGameApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(FootballOldPaperGameApplication.class, args);
+
+        CheckPointId checkPointId = new CheckPointId();
+        checkPointId.checkPointIdGenerator();
     }
 
 }

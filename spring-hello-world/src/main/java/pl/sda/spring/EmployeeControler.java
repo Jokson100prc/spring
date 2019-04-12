@@ -11,13 +11,13 @@ public class EmployeeControler {
     private EmployeeService employeeService;
     // private EmployeeRepository employeeRepository;
 
+    public EmployeeControler(EmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+
     @GetMapping
     public Iterable<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();
-    }
-
-    public EmployeeControler(EmployeeService employeeService) {
-        this.employeeService = employeeService;
     }
 
     @PostMapping
