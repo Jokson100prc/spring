@@ -5,16 +5,14 @@ import java.util.List;
 
 public class CheckPointId {
 
-    int firstHalfId = 0;
-    int secondHalfId = 0;
+    public static List<String> checkPointsId = new ArrayList<>();
 
-    List<Integer> firstHalfIdNumbers = new ArrayList<>();
-    List<Integer> secondHalfIdNumbers = new ArrayList<>();
+    public static List<String> checkPointIdGenerator() {
+        int firstHalfId = 0;
+        int secondHalfId = 0;
 
-    protected List<String> checkPointIdGenerator() {
-        List<String> checkPointsId = new ArrayList<>();
-
-
+        List<Integer> firstHalfIdNumbers = new ArrayList<>();
+        List<Integer> secondHalfIdNumbers = new ArrayList<>();
         for (int i = 0; i < 11; i++) {
             firstHalfId++;
 
@@ -38,11 +36,20 @@ public class CheckPointId {
 //            System.out.println(firstHalfId + " " + " " + secondHalfId);
         }
 
-        for (int i = 0; i < checkPointsId.size(); i++) {
-            System.out.println(checkPointsId.get(i));
-        }
+//        for (int i = 0; i < checkPointsId.size(); i++) {
+//            System.out.println(checkPointsId.get(i));
+//        }
 
-        System.out.println(checkPointsId.size());
+//        System.out.println(checkPointsId.size());
+
         return checkPointsId;
+    }
+
+    public List<String> getCheckPointsId() {
+        return checkPointsId;
+    }
+
+    public void setCheckPointsId(List<String> checkPointsId) {
+        this.checkPointsId = checkPointsId;
     }
 }

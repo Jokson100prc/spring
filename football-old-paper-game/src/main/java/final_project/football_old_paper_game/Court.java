@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Court {
 
     CheckPoint checkPoint;
-    MoveBetween moveBetween;
 
-    HashMap<CheckPointId, CheckPoint> checkPointsHashMap;
+    public final static HashMap<String,CheckPoint> CHECKPOINT_HASHMAP = new HashMap<>();
+
 }
