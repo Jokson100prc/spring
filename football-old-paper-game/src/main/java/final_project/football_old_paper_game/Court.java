@@ -8,4 +8,6 @@ public class Court {
 
     public final static HashMap<String,CheckPoint> CHECKPOINT_HASHMAP = new HashMap<>();
 
+
+
 }

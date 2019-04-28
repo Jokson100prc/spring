@@ -41,7 +41,6 @@ public class CheckPointId {
 //        }
 
 //        System.out.println(checkPointsId.size());
-
         return checkPointsId;
     }
 

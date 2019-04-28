@@ -21,14 +21,19 @@ public class FootballOldPaperGameApplication {
         List<String> checkPointsId = CheckPointId.checkPointIdGenerator();
 
 
-// checked if does CHECKPOINT_HASHMAP have a string key from my generatorId
-//        for (int i = 0; i <checkPointsId.size() ; i++) {
-//            CHECKPOINT_HASHMAP.put(checkPointsId.get(i),checkPoint);
-//            boolean b = CHECKPOINT_HASHMAP.containsKey("11 : 11");
+        /** TODO: every values in my HashMap is this same object: checkpoint, propably this is not what I'd like to have
+         propably every single checkPoint must be new Checkpoint.
+         How to do it?*/
+        for (int i = 0; i <checkPointsId.size() ; i++) {
+
+
+            CHECKPOINT_HASHMAP.put(checkPointsId.get(i),checkPoint);
+            boolean b = CHECKPOINT_HASHMAP.containsKey("11 : 10");
 //            System.out.println(b);
-//            yes, it has
-//        }
-
-
+        }
+        for (String i : CHECKPOINT_HASHMAP.keySet()) {
+            System.out.println("key: " + i + " value: " + CHECKPOINT_HASHMAP.get(i));
+        }
     }
+
 }
