@@ -16,18 +16,15 @@ public class FootballOldPaperGameApplication {
 //        CheckPointId checkPointId = new CheckPointId();
 //        checkPointId.checkPointIdGenerator();
 
-        CheckPoint checkPoint = new CheckPoint(true,true,true,true,true,true,true,true);
+//        CheckPoint checkPoint = new CheckPoint(true,true,true,true,true,true,true,true);
 
         List<String> checkPointsId = CheckPointId.checkPointIdGenerator();
 
 
-        /** TODO: every values in my HashMap is this same object: checkpoint, propably this is not what I'd like to have
-         propably every single checkPoint must be new Checkpoint.
-         How to do it?*/
         for (int i = 0; i <checkPointsId.size() ; i++) {
 
 
-            CHECKPOINT_HASHMAP.put(checkPointsId.get(i),checkPoint);
+            CHECKPOINT_HASHMAP.put(checkPointsId.get(i),new CheckPoint(true,true,true,true,true,true,true,true));
             boolean b = CHECKPOINT_HASHMAP.containsKey("11 : 10");
 //            System.out.println(b);
         }
